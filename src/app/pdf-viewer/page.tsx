@@ -1,19 +1,17 @@
 "use client";
 import { useEffect, useState } from "react";
 import PDFViewerComponent from "../components/pdf/pdfView";
+import { useSearchParams } from "next/navigation";
 
-export default function PDFViwer({
-  searchParams,
-}: {
-  searchParams: { [key: string]: string | undefined };
-}) {
+export default function PDFViwer() {
   const [datas, setDatas] = useState({});
+  const searchParams = useSearchParams();
 
   const hasDataToRenderPdf = Object.keys(datas).length > 0;
 
   useEffect(() => {
     // Recupere os dados do PDF da query string
-    const data = searchParams['data'];
+    const data = searchParams!.get('data');
 
     // Renderize o PDF em tela cheia
     if (data) {

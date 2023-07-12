@@ -2,15 +2,14 @@
 
 import axios from "axios";
 import { useRouter } from "next/navigation";
+import { useSearchParams } from 'next/navigation'
 import { useEffect, useState } from "react";
 
-export default function Home({
-  searchParams,
-}: {
-  searchParams: { [key: string]: string | undefined };
-}) {
+export default function Home() {
   const [datas, setDatas] = useState({});
   const router = useRouter();
+  const searchParams = useSearchParams()
+
 
   const hasDataToRenderPdf = Object.keys(datas).length > 0;
 
@@ -32,15 +31,12 @@ export default function Home({
   };
 
   useEffect(() => {
-    const params = searchParams["url"];
+    const params = searchParams!.get('url')
 
     if (params) {
       handleRequest(params); 
-      console.log(params)
-      console.log("peguei o params")
       return;
     }
-    console.log("Não peguei os params")
     router.push("/homeSearch");
   }, []);
 

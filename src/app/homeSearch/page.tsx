@@ -31,15 +31,10 @@ export default function HomeSearch({
   };
 
   const openPdfInNewTab = () => {
-    const isFromUrl = searchParams["url"];
     const dataQueryString = new URLSearchParams({
       data: JSON.stringify(datas),
     }).toString();
     const url = `/pdf-viewer?${dataQueryString}`;
-    if (isFromUrl) {
-      window.location.href = url;
-      return;
-    }
     window.open(url, "_blank");
   };
 
