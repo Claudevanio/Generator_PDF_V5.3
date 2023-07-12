@@ -35,10 +35,12 @@ export default function Home({
     const params = searchParams["url"];
 
     if (params) {
-      handleRequest(params);
+      handleRequest(params); 
+      console.log(params)
+      console.log("peguei o params")
       return;
     }
-
+    console.log("Não peguei os params")
     router.push("/homeSearch");
   }, []);
 
