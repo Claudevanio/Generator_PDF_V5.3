@@ -1,0 +1,167 @@
+{
+   "listaDadosPessoais":{
+      "nb":"1206046144",
+      "cpf":"37892061649",
+      "ddb":"2002-04-02",
+      "nome":"TARCISIO DAS MERCES SILVA",
+      "dt_nascimento":"1954-09-24",
+      "idade":68,
+      "sexo":"MASCULINO",
+      "uf":"MG",
+      "cidade":"BARAO DE COCAIS",
+      "endereco":"RUA MARIA BERNARDINA         128",
+      "bairro":"LAGOA",
+      "cep":"35970000"
+   },
+   "listaDadosBeneficio":{
+      "beneficio":"1206046144",
+      "especie":"92 - APOSENTADORIA INVALIDEZ - ACIDENTE DO TRABALHO",
+      "situacao":"ATIVO",
+      "pensao":"N\u00c3O",
+      "representanteLegal":"N\u00c3O",
+      "elegivel":"SIM",
+      "bloqueioEmprestimo":"N\u00c3O",
+      "valorMargemDisponivelRCC":207.72,
+      "valorMargemDisponivel":31.59,
+      "valorMargemDisponivelRMC":0,
+      "basedeCalculo":4154.42
+   },
+   "listaDadosBancario":{
+      "nomeBanco":"BANCO BRADESCO S A",
+      "codigoBanco":237,
+      "agencia":2483,
+      "cc":"0000016292",
+      "tipoMeioPagamento":"Conta Corrente"
+   },
+   "listaRMC":[
+      {
+         "situacao":"Ativo",
+         "nomeBanco":"BANCO BMG S A",
+         "valor":153.04,
+         "codigoBanco":"318",
+         "dataInclusao":"03\/02\/2017",
+         "numeroEmprestimo":"11490589",
+         "limite":3610,
+         "tipo emprestimo":76
+      }
+   ],
+   "listaEmprestimos":[
+      {
+         "nomeBanco":"BANCO DAYCOVAL S A",
+         "codigoBanco":"707",
+         "dataAverbacao":"26\/05\/2023",
+         "numeroContrato":"55-013554822\/23",
+         "valorEmprestado":48216,
+         "valorParcela":574,
+         "qtdParcelas":84,
+         "situacao":"Ativo",
+         "competenciaInicio":"06\/2023",
+         "competenciaFim":"05\/2030",
+         "tipo_emprestimo":98
+      },
+      {
+         "nomeBanco":"BANCO BRADESCO S A",
+         "codigoBanco":"237",
+         "dataAverbacao":"03\/04\/2023",
+         "numeroContrato":"0123477948456",
+         "valorEmprestado":2357.52,
+         "valorParcela":58.13,
+         "qtdParcelas":84,
+         "situacao":"Ativo",
+         "competenciaInicio":"04\/2023",
+         "competenciaFim":"03\/2030",
+         "tipo_emprestimo":98
+      },
+      {
+         "nomeBanco":"BANCO INBURSA SA",
+         "codigoBanco":"12",
+         "dataAverbacao":"22\/03\/2023",
+         "numeroContrato":"202303091005943",
+         "valorEmprestado":2921.01,
+         "valorParcela":73.16,
+         "qtdParcelas":69,
+         "situacao":"Ativo",
+         "competenciaInicio":"04\/2023",
+         "competenciaFim":"12\/2028",
+         "tipo_emprestimo":98
+      },
+      {
+         "nomeBanco":"BANCO INBURSA SA",
+         "codigoBanco":"12",
+         "dataAverbacao":"20\/03\/2023",
+         "numeroContrato":"202303071004276",
+         "valorEmprestado":2943.98,
+         "valorParcela":71.82,
+         "qtdParcelas":73,
+         "situacao":"Ativo",
+         "competenciaInicio":"04\/2023",
+         "competenciaFim":"04\/2029",
+         "tipo_emprestimo":98
+      },
+      {
+         "nomeBanco":"BANCO BRADESCO S A",
+         "codigoBanco":"237",
+         "dataAverbacao":"28\/02\/2023",
+         "numeroContrato":"0123476213838",
+         "valorEmprestado":929.61,
+         "valorParcela":24.29,
+         "qtdParcelas":60,
+         "situacao":"Ativo",
+         "competenciaInicio":"03\/2023",
+         "competenciaFim":"02\/2028",
+         "tipo_emprestimo":98
+      },
+      {
+         "nomeBanco":"BANCO BRADESCO S A",
+         "codigoBanco":"237",
+         "dataAverbacao":"28\/02\/2023",
+         "numeroContrato":"0123476213128",
+         "valorEmprestado":2204.63,
+         "valorParcela":53.29,
+         "qtdParcelas":69,
+         "situacao":"Ativo",
+         "competenciaInicio":"03\/2023",
+         "competenciaFim":"11\/2028",
+         "tipo_emprestimo":98
+      },
+      {
+         "nomeBanco":"BANCO SANTANDER OLE",
+         "codigoBanco":"33",
+         "dataAverbacao":"31\/01\/2023",
+         "numeroContrato":"264505259",
+         "valorEmprestado":9324.88,
+         "valorParcela":200,
+         "qtdParcelas":84,
+         "situacao":"Ativo",
+         "competenciaInicio":"02\/2023",
+         "competenciaFim":"01\/2030",
+         "tipo_emprestimo":98
+      },
+      {
+         "nomeBanco":"BANCO ITAU CONSIGNADO SA",
+         "codigoBanco":"29",
+         "dataAverbacao":"19\/01\/2023",
+         "numeroContrato":"648230439",
+         "valorEmprestado":9510.87,
+         "valorParcela":220.4,
+         "qtdParcelas":84,
+         "situacao":"Ativo",
+         "competenciaInicio":"02\/2023",
+         "competenciaFim":"01\/2030",
+         "tipo_emprestimo":98
+      },
+      {
+         "nomeBanco":"BANCO BRADESCO S A",
+         "codigoBanco":"237",
+         "dataAverbacao":"12\/12\/2022",
+         "numeroContrato":"0123471862504",
+         "valorEmprestado":7477.93,
+         "valorParcela":147.37,
+         "qtdParcelas":84,
+         "situacao":"Ativo",
+         "competenciaInicio":"01\/2023",
+         "competenciaFim":"12\/2029",
+         "tipo_emprestimo":98
+      }
+   ]
+}
