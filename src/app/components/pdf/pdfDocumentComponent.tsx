@@ -496,13 +496,24 @@ const MyDocument = ({ datas, date }: { datas: any; date: string }) => {
         </View>
         <View style={styles.footer} fixed>
           <DividerComponent />
-          <View style={[styles.logoInss, { fontSize: 8 }]}>
+          <View
+            style={[
+              styles.logoInss,
+              {
+                fontSize: 8,
+                justifyContent: "space-between",
+                flexDirection: "row",
+              },
+            ]}
+          >
             <Image
               style={{ width: 120, alignSelf: "flex-end" }}
               src="/assets/logo-inss.png"
             />
-            <Text style={{ alignSelf: "flex-end" }}>{date}</Text>
-            <Text style={{ alignSelf: "flex-end" }}>2 / 3</Text>
+            <View>
+              <Text style={{ alignSelf: "flex-end" }}>{date}</Text>
+              <Text style={{ alignSelf: "flex-end" }}>2 / 3</Text>
+            </View>
           </View>
         </View>
       </Page>
@@ -564,13 +575,24 @@ const MyDocument = ({ datas, date }: { datas: any; date: string }) => {
 
         <View style={styles.footer} fixed>
           <DividerComponent />
-          <View style={[styles.logoInss, { fontSize: 8 }]}>
+          <View
+            style={[
+              styles.logoInss,
+              {
+                fontSize: 8,
+                justifyContent: "space-between",
+                flexDirection: "row",
+              },
+            ]}
+          >
             <Image
               style={{ width: 120, alignSelf: "flex-end" }}
               src="/assets/logo-inss.png"
             />
-            <Text style={{ alignSelf: "flex-end" }}>{date}</Text>
-            <Text style={{ alignSelf: "flex-end" }}>3 / 3</Text>
+            <View>
+              <Text style={{ alignSelf: "flex-end" }}>{date}</Text>
+              <Text style={{ alignSelf: "flex-end" }}>3 / 3</Text>
+            </View>
           </View>
         </View>
       </Page>
