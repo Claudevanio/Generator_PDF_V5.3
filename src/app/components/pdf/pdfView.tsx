@@ -9,7 +9,7 @@ import { format } from "date-fns";
 const PDFViewerComponent = ({ datas }: { datas: any }) => {
   const currentDate = new Date();
 
-  const threeHoursAgo = new Date(currentDate.getTime() - 3 * 60 * 60 * 1000);
+  const threeHoursAgo = format( new Date(currentDate.getTime() - 3 * 60 * 60 * 1000), "dd/MM/yyyy HH:mm:ss");
 
   return (
     <PDFViewer className="w-full h-full">

@@ -38,7 +38,7 @@ interface TableProps {
   children: React.ReactNode;
 }
 
-const MyDocument = ({ datas, date }: { datas: any; date: Date }) => {
+const MyDocument = ({ datas, date }: { datas: any; date: string }) => {
   return (
     <Document pageMode="fullScreen">
       <Page size="A3">
