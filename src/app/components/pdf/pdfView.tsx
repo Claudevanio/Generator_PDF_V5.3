@@ -3,18 +3,17 @@ import { PDFViewer } from "@react-pdf/renderer";
 import MyDocument from "./pdfDocumentComponent";
 import { format } from "date-fns";
 
-function convertTZ(date: Date, tzString: string) {
-  const options = { timeZone: tzString, timeZoneName: 'short' };
-  const utcTime = date.getTime() + (date.getTimezoneOffset() * 60 * 1000);
-  return new Date(utcTime).toLocaleString("pt-BR", options);
-}
+
 
 
 const PDFViewerComponent = ({ datas }: { datas: any }) => {
+  const currentDate = new Date();
+
+  const threeHoursAgo = new Date(currentDate.getTime() - 3 * 60 * 60 * 1000);
+
   return (
     <PDFViewer className="w-full h-full">
-      <MyDocument datas={datas} date={
-        convertTZ(currentDateTime, 'America/Sao_Paulo') }  />
+      <MyDocument datas={datas} date={threeHoursAgo}  />
     </PDFViewer>
   );
 };
