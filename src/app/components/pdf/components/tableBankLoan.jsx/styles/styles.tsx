@@ -1,4 +1,5 @@
 import { StyleSheet } from "@react-pdf/renderer";
+import { transform } from "typescript";
 
 const styles = StyleSheet.create({
   page: {
@@ -90,6 +91,7 @@ const styles = StyleSheet.create({
     width: "9%",
     borderRight: 1,
     borderColor: "#000",
+    display:'flex',
   },
   tableRow: {
     flexDirection: "row",

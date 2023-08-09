@@ -15,6 +15,7 @@ import {
 } from "./logic";
 import HeaderPageComponent from "./components/headerPage";
 import DividerComponent from "./components/divider";
+import { getAbsoluteUrl } from "@/utils/vercel-utils";
 
 const TableSide: React.FC<TableProps> = ({ children }) => (
   <View
@@ -60,7 +61,7 @@ const MyDocument = ({ datas, date }: { datas: any; date: string }) => {
             <View style={styles.titleTablePanel}>
               <View style={styles.image}>
                 <Image
-                  src="/assets/person-img.png"
+                  src={`${getAbsoluteUrl()}/api/read-file?filename=person-img.png`}
                   style={{ marginRight: 16 }}
                 />
               </View>
@@ -104,25 +105,31 @@ const MyDocument = ({ datas, date }: { datas: any; date: string }) => {
                 </View>
 
                 <View style={{ width: "50%" }}>
-                  {datas.listaDadosBeneficio.representanteLegal === "NÃO" ? (
+                  {datas.listaDadosBeneficio.representanteLegal === false ? (
                     <Text>Não possui representante legal</Text>
                   ) : (
                     <Text>Possui representante legal</Text>
                   )}
 
-                  {datas.listaDadosBeneficio.pensao === "NÃO" ? (
+                  {datas.listaDadosBeneficio.possuiProcurador === false ? (
+                    <Text>Não possui Pocurador</Text>
+                  ) : (
+                    <Text>Possui Procurador</Text>
+                  )}
+
+                  {datas.listaDadosBeneficio.pensao === false ? (
                     <Text>Não é pensão alimentícia</Text>
                   ) : (
                     <Text>É pensão alimentícia</Text>
                   )}
 
-                  {datas.listaDadosBeneficio.bloqueioEmprestimo === "NÃO" ? (
+                  {datas.listaDadosBeneficio.bloqueioEmprestimo === false ? (
                     <Text>Liberado para empréstimo </Text>
                   ) : (
                     <Text>Não liberado para empréstimo </Text>
                   )}
 
-                  {datas.listaDadosBeneficio.elegivel === "SIM" ? (
+                  {datas.listaDadosBeneficio.elegivel === true ? (
                     <Text style={styles.bold}>Elegível para empréstimos</Text>
                   ) : (
                     <Text style={styles.bold}>
@@ -140,7 +147,7 @@ const MyDocument = ({ datas, date }: { datas: any; date: string }) => {
             <View style={styles.titleTablePanel}>
               <View style={styles.image}>
                 <Image
-                  src="/assets/cifrao-img.png"
+                  src={`${getAbsoluteUrl()}/api/read-file?filename=cifrao-img.png`}
                   style={{ marginRight: 16 }}
                 />
               </View>
@@ -478,7 +485,7 @@ const MyDocument = ({ datas, date }: { datas: any; date: string }) => {
           <View style={[styles.logoInss, { fontSize: 8 }]}>
             <Image
               style={{ width: 120, alignSelf: "flex-end" }}
-              src="/assets/logo-inss.png"
+              src={`${getAbsoluteUrl()}/api/read-file?filename=logo-inss.png`}
             />
             <Text style={{ alignSelf: "flex-end" }}>{date}</Text>
             <Text style={{ alignSelf: "flex-end" }}>1 / 3</Text>
@@ -508,7 +515,7 @@ const MyDocument = ({ datas, date }: { datas: any; date: string }) => {
           >
             <Image
               style={{ width: 120, alignSelf: "flex-end" }}
-              src="/assets/logo-inss.png"
+              src={`${getAbsoluteUrl()}/api/read-file?filename=logo-inss.png`}
             />
             <View>
               <Text style={{ alignSelf: "flex-end" }}>{date}</Text>
@@ -562,7 +569,7 @@ const MyDocument = ({ datas, date }: { datas: any; date: string }) => {
               alignItems: "center",
             }}
           >
-            <Text style={{ fontFamily: "Helvetica-Bold", fontSize: 8 }}>
+            <Text style={{ fontFamily: "Helvetica-Bold", fontSize: 10 }}>
               CARTÃO DE CRÉDITO - RCC
             </Text>
           </View>
@@ -587,7 +594,7 @@ const MyDocument = ({ datas, date }: { datas: any; date: string }) => {
           >
             <Image
               style={{ width: 120, alignSelf: "flex-end" }}
-              src="/assets/logo-inss.png"
+              src={`${getAbsoluteUrl()}/api/read-file?filename=logo-inss.png`}
             />
             <View>
               <Text style={{ alignSelf: "flex-end" }}>{date}</Text>

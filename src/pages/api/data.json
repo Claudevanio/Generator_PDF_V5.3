@@ -1,115 +1,90 @@
 {
    "listaDadosPessoais":{
-      "nb":"12060415154",
-      "cpf":"37892045451",
-      "ddb":"2002-04-02",
-      "nome":"TARCISIO DAS MERCES SILVA",
-      "dt_nascimento":"1954-09-24",
-      "idade":68,
-      "sexo":"MASCULINO",
-      "uf":"MG",
-      "cidade":"BARAO DE COCAIS",
-      "endereco":"RUA ANTONIA BARRILZINHA         128",
-      "bairro":"LAGOA",
-      "cep":"35480000"
+      "nb":1883390262,
+      "cpf":"",
+      "ddb":"",
+      "nome":"JOSE CARLOS DA SILVA BENTO",
+      "dt_nascimento":"",
+      "idade":"",
+      "sexo":"",
+      "uf":"",
+      "cidade":"",
+      "endereco":"",
+      "bairro":"",
+      "cep":""
    },
    "listaDadosBeneficio":{
-      "beneficio":"1206046",
-      "especie":"92 - APOSENTADORIA INVALIDEZ - ACIDENTE DO TRABALHO",
+      "beneficio":1883390262,
+      "especie":"46 - APOSENTADORIA ESPECIAL",
       "situacao":"ATIVO",
-      "pensao":"N\u00c3O",
-      "representanteLegal":"N\u00c3O",
-      "elegivel":"SIM",
-      "bloqueioEmprestimo":"N\u00c3O",
-      "valorMargemDisponivelRCC":207.72,
-      "valorMargemDisponivel":31.59,
+      "pensao":"N\u00e3o",
+      "representanteLegal":"N\u00e3o",
+      "possuiProcurador":"N\u00e3o",
+      "elegivel":true,
+      "bloqueioEmprestimo":"N\u00e3o",
+      "valorMargemDisponivelRCC":0,
+      "margemDisponivelEmprestimo":0.14,
       "valorMargemDisponivelRMC":0,
-      "basedeCalculo":4154.42
+      "basedeCalculo":4238.14
    },
    "listaDadosBancario":{
-      "nomeBanco":"BANCO BRACODES S A",
-      "codigoBanco":237,
-      "agencia":2483,
-      "cc":"0000016292",
+      "nomeBanco":"CAIXA DE PANDORA",
+      "codigoBanco":404,
+      "agencia":120,
+      "cc":"0000359735",
       "tipoMeioPagamento":"Conta Corrente"
    },
    "listaRMC":[
       {
          "situacao":"Ativo",
-         "nomeBanco":"BANCO BMC A S",
-         "valor":153.04,
-         "codigoBanco":"6232",
-         "dataInclusao":"03\/02\/2017",
-         "numeroEmprestimo":"11490589",
-         "limite":3610,
-         "tipo emprestimo":76
+         "nomeBanco":"BANCO BI",
+         "valor":165.65,
+         "codigoBanco":202,
+         "dataInclusao":"01-02-2019",
+         "numeroEmprestimo":"0229724646975",
+         "limite":4472,
+         "tipo emprestimo":"Reserva de Margem para Cart\u00e3o (RMC)"
+      }
+   ],
+   "novos_RCC":[
+      {
+         "situacao":"Ativo",
+         "nomeBanco":"BANCO BI",
+         "valor":195.48,
+         "codigoBanco":202,
+         "dataInclusao":"19-09-2022",
+         "numeroEmprestimo":"763763987-8",
+         "limite":5375,
+         "tipo emprestimo":"Reserva de Cart\u00e3o Consignado (RCC)"
       }
    ],
    "listaEmprestimos":[
       {
-         "nomeBanco":"BANCO DAYVALCO S A",
-         "codigoBanco":"707874",
-         "dataAverbacao":"26\/05\/2023",
-         "numeroContrato":"55-013554822\/23",
-         "valorEmprestado":48216,
-         "valorParcela":574,
+         "nomeBanco":"JORGE BANCO S A",
+         "codigoBanco":808,
+         "dataAverbacao":"21-06-2023",
+         "numeroContrato":"58020747665-331",
+         "valorEmprestado":31987.2,
+         "valorParcela":380.8,
          "qtdParcelas":84,
          "situacao":"Ativo",
-         "competenciaInicio":"06\/2023",
-         "competenciaFim":"05\/2030",
-         "tipo_emprestimo":98
+         "competenciaInicio":202307,
+         "competenciaFim":203006,
+         "tipo_emprestimo":"Empr\u00e9stimo consignado"
       },
       {
-         "nomeBanco":"BANCO BRACODES A S",
-         "codigoBanco":"000",
-         "dataAverbacao":"03\/04\/2023",
-         "numeroContrato":"0123477948456",
-         "valorEmprestado":2357.52,
-         "valorParcela":58.13,
+         "nomeBanco":"FACTOR FINANCE S A",
+         "codigoBanco":666,
+         "dataAverbacao":"26-05-2023",
+         "numeroContrato":"0060583476",
+         "valorEmprestado":1630.39,
+         "valorParcela":46.9,
          "qtdParcelas":84,
          "situacao":"Ativo",
-         "competenciaInicio":"04\/2023",
-         "competenciaFim":"03\/2030",
-         "tipo_emprestimo":98
-      },
-      {
-         "nomeBanco":"BANCO INSABUR SA",
-         "codigoBanco":"12154",
-         "dataAverbacao":"22\/03\/2023",
-         "numeroContrato":"202303091005943",
-         "valorEmprestado":2921.01,
-         "valorParcela":73.16,
-         "qtdParcelas":69,
-         "situacao":"Ativo",
-         "competenciaInicio":"04\/2023",
-         "competenciaFim":"12\/2028",
-         "tipo_emprestimo":98
-      },
-      {
-         "nomeBanco":"BANCO INSABUR SA",
-         "codigoBanco":"132132",
-         "dataAverbacao":"20\/03\/2023",
-         "numeroContrato":"202303071004276",
-         "valorEmprestado":2943.98,
-         "valorParcela":71.82,
-         "qtdParcelas":73,
-         "situacao":"Ativo",
-         "competenciaInicio":"04\/2023",
-         "competenciaFim":"04\/2029",
-         "tipo_emprestimo":98
-      },
-      {
-         "nomeBanco":"BANCO BRACODES S A",
-         "codigoBanco":"3213",
-         "dataAverbacao":"28\/02\/2023",
-         "numeroContrato":"0123476213838",
-         "valorEmprestado":929.61,
-         "valorParcela":24.29,
-         "qtdParcelas":60,
-         "situacao":"Ativo",
-         "competenciaInicio":"03\/2023",
-         "competenciaFim":"02\/2028",
-         "tipo_emprestimo":98
+         "competenciaInicio":202306,
+         "competenciaFim":203005,
+         "tipo_emprestimo":"Empr\u00e9stimo consignado"
       }
+    
    ]
 }

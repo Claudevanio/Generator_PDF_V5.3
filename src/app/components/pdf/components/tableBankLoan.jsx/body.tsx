@@ -1,5 +1,7 @@
 import { Text, View } from "@react-pdf/renderer";
 import styles from "./styles/styles";
+import React from "react";
+import { wrap } from "module";
 
 interface TableBankLoanBodyProps {
   data: any;
@@ -14,15 +16,26 @@ const formatarValorParaReal = (valor: any) => {
   return numeroFormatado;
 };
 
+
+function splitStringIntoGroups(inputString:string, groupSize:number) {
+  const resultArray = [];
+  for (let i = 0; i < inputString.length; i += groupSize) {
+    const group = inputString.slice(i, i + groupSize);
+    resultArray.push(group);
+  }
+  console.log(resultArray)
+  return resultArray;
+}
 const TableBankLoanBody: React.FC<TableBankLoanBodyProps> = ({ data }) => (
   <View>
     <View style={{ fontSize: 2 }}>
       <View style={[styles.table, { width: "100%" }]}>
         <View style={{ flexDirection: "row", height: 44 }}>
           <View style={[styles.tableData, { textAlign: "center", width: 90 }]}>
-            <Text style={[styles.dataCells, { fontSize: 7 }]}>
-              {data.numeroContrato}
+            <Text style={[styles.dataCells, { fontSize: 7, }]}>
+            {splitStringIntoGroups(`${data.numeroContrato}`, 4)}
             </Text>
+
           </View>
           <View style={styles.tableData}>
             <Text style={[styles.dataCells, { fontSize: 7 }]}>
